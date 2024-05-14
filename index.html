@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Duck Life 3</title>
-        <script src="../../../ruffle/ruffle.js"></script>
-        <!--Google Analytics-->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+  <head>
+    <title>Dune</title>
+    <link rel="stylesheet" href="lib/game-loader/gameloader.css">
+    <script src="lib/game-loader/gameloader.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-            gtag('config', 'G-M9KJ1XPKLF');
-        </script>
-        <!--Google Analytics-->
-    </head>
-    <body>
-        <div style="margin:0 auto;text-align:center">
-            <embed src="ducklife3.swf" width="1000" height="800"></embed>
-            <div style="margin-left:auto;margin-right:auto;text-align:center">
-          </div>
-        </div>
+        gtag('config', 'G-M9KJ1XPKLF');
+    </script>
+    <!--Google Analytics-->
+  </head>
+  <body>
+    <script type="text/javascript">
+        var options = {
+          author: "Vseigru",
+          logo: "logo.jpg",
+          gameName: "Dune",
+          gameUrl: "",
+          moreLink: (""),
+          allowFullscreen: true,
+          locale: "en_US",
+          loader: "5.6.x",
+          loaderOptions: {"moduleJsonUrl": "Build/Dunes.json", "unityLoaderUrl": "Build/UnityLoader.js"},
+        };
 
-        <!--Skin Ad-->
+        GameInit.load(options);
+    </script>
+    <!--Anchor Ad Start-->
 		<script>
-			var afg={};afg.u=6328;afg.s=21;
-			afg.centerWidth=1000; /* Adjust by Game Resolution */
-			afg.topPos=0;
+			var afg={};afg.u=6328;afg.s=31;
+			afg.anchor="bottom";
 			document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
 		</script>
-    </body>
+		<!--Anchor Ad End-->
+  </body>
 </html>
